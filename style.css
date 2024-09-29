@@ -1,0 +1,193 @@
+/* Style dasar untuk seluruh halaman */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+.navbar {
+    background-color: #007bff;
+} 
+
+.navbar-brand, .nav-link {
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #ffdd57 !important;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(135deg, #007bff, #ffdd57);
+    color: white;
+    padding: 100px 20px;
+}
+
+#hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 123, 255, 0.8);
+}
+
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#hero a {
+    background-color: white;
+    color: #007bff;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+#hero a:hover {
+    background-color: #ffdd57;
+    color: #007bff;
+}
+
+ /* About Section */
+#about h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+  
+  /* Projects Section */
+#projects h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.carousel-item img {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+  /* Skills Section */
+#skills {
+    background-color: #ffdd57;
+    padding: 50px 0;
+}
+
+#skills h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#skills .col-md-4 {
+    text-align: center;
+    padding: 10px;
+}
+
+#skills h4 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffdd57;
+}
+
+  
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .navbar, .dark-mode footer {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode a {
+    color: #ffdd57;
+}
+
+.dark-mode .carousel-caption {
+    background: rgba(255, 255, 255, 0.1);
+}
+  
+
+/* Layar tablet dan lebih kecil */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .carousel-caption {
+        font-size: 0.9rem;
+    }
+}
+
+/* Layar ponsel */
+@media (max-width: 576px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+}
+
+/* AOS Animations */
+  [data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+  }
+  
+  [data-aos][data-aos][data-aos-duration] {
+    transition-duration: 1.5s;
+  }
+  
